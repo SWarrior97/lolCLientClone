@@ -3,12 +3,18 @@ const dotenv = require('dotenv')
 const morgan = require('morgan')
 const exphbs = require('express-handlebars')
 const mongoose = require('mongoose')
+const connectDB = require('./config/db')
 const path = require('path')
 const methodOverride = require('method-override')
 var ip = require("ip")
 
+
+
 //load config
 dotenv.config({path:'./config/config.env'})
+
+//connect to db
+connectDB();
 
 const app = express()
 
@@ -36,6 +42,7 @@ if(process.env.NODE_ENV === 'development'){
 //Handlebars
 app.engine('.hbs',exphbs({
 	  helpers: {
+		
 	  },
 	  defaultLayout: 'main',
 	  extname: '.hbs',
@@ -48,12 +55,11 @@ app.set('view engine','.hbs')
 //Static folder
 app.use(express.static(path.join(__dirname,'public')))
 
+//Routes
+app.use('/',require('./routes/index'))
+
 const PORT = process.env.PORT || 3000
 const HOSTNAME = ip.address();
 
 
-if(process.env.NODE_ENV == "development"){
-    app.listen(PORT,console.log(`Server on port ${PORT} on localhost`));
-}else{
-    app.listen(PORT,HOSTNAME,console.log(`Server on port ${PORT} Hostname ${HOSTNAME}`));
-}
+app.listen(PORT,HOSTNAME,console.log(`Server running in ${process.env.NODE_ENV} on port ${PORT} Hostname ${HOSTNAME}`))
