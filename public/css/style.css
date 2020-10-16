@@ -8,7 +8,169 @@
     width: 30%;
     height: var(--pageHeight);
     float: left;
-    background-color: red;
+    background-color: white;
+}
+
+.icon img{
+    width: 10%;
+    height: 10%;
+    padding-top: 50px;
+}
+
+.title{
+    padding-top: 25px;
+}
+
+.social-button{
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.stay-signed{
+    padding-top: 10px;
+    padding-left: 60px;
+    text-align: left;
+}
+
+.facebook{
+    display: inline-block;
+    width: 25%;
+    background-color: #1877f2;
+    border-radius: 5px;
+}
+
+.facebook:hover{
+    cursor: pointer;
+    background-color: #0966de;
+}
+
+.google:hover{
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.apple:hover{
+    cursor: pointer;
+}
+
+.google{
+    display: inline-block;
+    width: 25%;
+    background-color: white;
+    border-radius: 5px;
+    border: #e8e8e8 solid;
+}
+
+.google button{
+    background-color: white;
+    border: none;
+}
+
+.apple{
+    display: inline-block;
+    width: 25%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.google img{
+   width: 20%;
+}
+
+.facebook a{
+    color:white;
+}
+
+
+.form-input input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ededed;
+    color:#a4a4a4;
+}
+
+.form-input input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ededed;
+}
+
+.form-input input[type=text]:hover{
+    background-color: #a4a4a4;
+}
+
+.form-input input[type=password]:hover{
+    background-color: #e7e7e7;
+
+}
+
+.create-account{
+    margin-top: 120px;
+}
+
+.create-account a{
+    text-decoration: none;
+    color: #bbb4b8;
+}
+
+.create-account a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.submit-form{
+    margin-top: 80px;
+    padding-top: 5px;
+    background-color: white;
+    color: #e8e8e8;
+    border:none;
+    border-radius: 20px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border: #e8e8e8 solid;
+}
+
+.footer-button1{
+    display: block;
+}
+
+.Row {
+    display: table;
+}
+
+.Column {
+    margin-left: 100000px;
+    display: table-cell;
+    text-align: center;
+}
+
+
+input:focus{
+    outline: 3px black solid;
+}
+
+.form-input{
+    padding-top: 10px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }
 
 .right-corner{

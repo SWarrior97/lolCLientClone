@@ -1,6 +1,34 @@
 <div>
     <div class="one">
-
+        <div class="icon">
+            <img src="img/icon.png" alt="">
+        </div>
+        <h5 class="title"><b>Sign In</b></h5>
+        <div class="form-container">
+            <div class="form-input">
+                <input type="text" placeholder="Username" class="input-form" name="username" id="username" onkeyup="verify()"/>
+                <input type="password" placeholder="Password" class="input-form" name="password" id="password" onkeyup="verify()"/>
+            </div>
+            <div class="social-button">
+                <div class="facebook"><a href="#" class="fa fa-facebook"></a></div>
+                <div class="google"><button onmouseleave="mouseLeaveImg(this)" onmouseover="mouseHoverImg(this)"><img src="img/google-icon1.png" alt="" onmouseleave="mouseLeaveImg(this)" onmouseover="mouseHoverImg(this)"></button></div>
+                <div class="apple"><i class="fab fa-apple"></i></div>
+            </div>
+            <div class="stay-signed">
+                {{input type="checkbox" name="selectedClasses[]" value=c.id}}
+                <label for="vehicle1"> Stay signed in</label><br>
+            </div>
+        </div>
+        <div>
+            <button class="submit-form" id="submitButton" onmouseleave="mouseLeave()" onmouseover="mouseHover()"><i class="material-icons">arrow_forward</i></button>
+        </div>
+        <div class="create-account">
+            <a class="footer-button1" href="">Can't Sign in?</a>
+            <div>
+                <a class="footer-button" href="">Create Account</a>
+            </div>                 
+            
+        </div>
     </div>
     <div class="two">
         <div class="right-corner">
