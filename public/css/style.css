@@ -1,0 +1,59 @@
+:root {
+    --leading: 2em;
+    --siteColor:#343a40;
+    --pageHeight:700px
+}
+
+.one {
+    width: 30%;
+    height: var(--pageHeight);
+    float: left;
+    background-color: red;
+}
+
+.right-corner{
+    position: absolute; 
+    bottom: 200px;
+    right: 320px;
+}
+
+.two {
+    margin-left: 15%;
+    height: var(--pageHeight);
+    background-image:url('../img/bg.jpg');
+}
+
+.two img {
+    width: 100%;
+    height: 100%;
+}
+
+.config{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: #717274;
+    color:white;
+    border-radius: .5em;
+    margin: auto;
+    padding: 1px;
+}
+
+.config:hover{
+    background-color: #a1a0a2;
+}
+
+.login-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+

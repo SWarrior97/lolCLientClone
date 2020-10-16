@@ -7,7 +7,9 @@ var path = require("path");
 // @route   GET /
 router.get('/',async (req,res) =>{
 	try{
-		res.send("teste")
+		res.render('login', {
+			layout: 'login',
+		})
 	}catch(err){
 		console.log(err)
 		res.render('error/500')
