@@ -95,7 +95,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #ededed;
-    color:#a4a4a4;
+    color:black;
 }
 
 .form-input input[type=password], select {
