@@ -98,6 +98,18 @@
     color:black;
 }
 
+.form-input input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ededed;
+    color:black;
+}
+
 .form-input input[type=password], select {
     width: 100%;
     padding: 12px 20px;
@@ -109,14 +121,6 @@
     background-color: #ededed;
 }
 
-.form-input input[type=text]:hover{
-    background-color: #a4a4a4;
-}
-
-.form-input input[type=password]:hover{
-    background-color: #e7e7e7;
-
-}
 
 .create-account{
     margin-top: 120px;
