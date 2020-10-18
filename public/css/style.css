@@ -136,6 +136,20 @@
     color: black;
 }
 
+.create-account-register{
+    margin-top: 50px;
+}
+
+.create-account-register a{
+    text-decoration: none;
+    color: #bbb4b8;
+}
+
+.create-account-register a:hover{
+    text-decoration: none;
+    color: black;
+}
+
 .submit-form{
     margin-top: 80px;
     padding-top: 5px;
