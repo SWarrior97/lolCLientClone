@@ -5,6 +5,7 @@ const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const {registerValidation,loginValidation} = require('../helpers/validator');
+var jwt = require('jsonwebtoken');
 
 
 // @desc   
@@ -40,7 +41,10 @@ router.post('/login',async (req,res) =>{
 				})
 			}else{
 				if (bcrypt.compareSync(req.body.password, user.password)) {
-					console.log("true")
+					//jwt
+					var token = jwt.sign({ id: user._id }, process.env.TOKEN_SECRET);
+					console.log(token)
+
 				} else {
 					res.render('error/custom',{
 						title:"Wrong Credential",

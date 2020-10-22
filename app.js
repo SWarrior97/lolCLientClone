@@ -7,6 +7,7 @@ const connectDB = require('./config/db')
 const path = require('path')
 const methodOverride = require('method-override')
 var ip = require("ip")
+const session = require('express-session');
 
 
 
@@ -48,6 +49,16 @@ app.engine('.hbs',exphbs({
 	  extname: '.hbs',
 	})
 )
+
+// Sessions
+app.use(
+	session({
+	  secret: 'keyboard cat',
+	  resave: false,
+	  saveUninitialized: false,
+	  store: new MongoStore({ mongooseConnection: mongoose.connection }),
+	})
+  )
 
 
 app.set('view engine','.hbs')
